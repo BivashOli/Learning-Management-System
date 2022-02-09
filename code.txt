@@ -1,0 +1,19 @@
+  <a href="class-content-teacher.php" class="post">submit content using link</a>
+
+ <script type="text/javascript">
+            jQuery(document).ready(function($){
+                $(".post").on("click",function(){
+                    $.ajax({
+                        url: "class-viewer.js",
+                        type: "POST",
+                        data: { class: $class_code },
+                        success: function(response){
+                              //do action  
+                        },
+                        error: function(){
+                              // do action
+                        }
+                    });
+                });
+            });
+        </script>

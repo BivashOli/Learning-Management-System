@@ -1,0 +1,54 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <style>
+         .header {
+    box-shadow: 6px 6px rgba(100, 100, 100, 0.4);
+
+   overflow: hidden; 
+   background-color: #2F2FA2; 
+  padding: 40px 10px;
+  color: white;
+  font-family: 'Google Sans',Roboto,Arial,sans-serif; 
+  font-size: 1.375rem;
+    font-weight: 400;
+    line-height: 1.75rem;
+}
+        .stuff{
+          text-align: center;
+        }
+        .stuff form{
+            position: relative;
+    top: 12vw;  
+    
+        }
+        .textfield input{
+            width:32vw;
+            height:6vw;
+            font-size: 42px;
+
+        }
+    </style>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="header">
+        Nepali School
+    </div>
+
+    <div class="stuff">
+
+    <form action="submit-class.php" method="post">
+        <div class="textfield">        <input type="text" placeholder="Class Name" name="class_name">
+        </div>
+        <input type="submit">
+    </div>
+</form>
+</body>
+</html>
